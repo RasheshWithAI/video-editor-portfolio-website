@@ -49,7 +49,15 @@ type VideoItem = {
 };
 
 const allVideos: VideoItem[] = [
-  // Trending Shorts (5)
+  // Trending Shorts (6)
+  {
+    id: "tr0",
+    title: "Trending Short — Featured",
+    category: "Trending Shorts",
+    youtubeId: "ivqAOpPmovw",
+    aspect: "9:16",
+    thumbnail: "https://i.ytimg.com/vi/ivqAOpPmovw/hqdefault.jpg",
+  },
   {
     id: "tr1",
     title: "Trending Short #1",
