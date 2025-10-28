@@ -12,8 +12,8 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+  DialogTrigger } from
+"@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import {
@@ -21,8 +21,8 @@ import {
   SelectTrigger,
   SelectValue,
   SelectContent,
-  SelectItem,
-} from "@/components/ui/select";
+  SelectItem } from
+"@/components/ui/select";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
@@ -32,11 +32,11 @@ if (typeof window !== "undefined") {
 }
 
 type Category =
-  | "Trending Shorts"
-  | "Montages"
-  | "AMV"
-  | "Car Edits"
-  | "Motion Graphics";
+"Trending Shorts" |
+"Montages" |
+"AMV" |
+"Car Edits" |
+"Motion Graphics";
 
 type VideoItem = {
   id: string;
@@ -49,120 +49,120 @@ type VideoItem = {
 };
 
 const allVideos: VideoItem[] = [
-  // Trending Shorts (6)
-  {
-    id: "tr0",
-    title: "Trending Short — Featured",
-    category: "Trending Shorts",
-    youtubeId: "ivqAOpPmovw",
-    aspect: "9:16",
-    thumbnail: "https://i.ytimg.com/vi/ivqAOpPmovw/hqdefault.jpg",
-  },
-  {
-    id: "tr1",
-    title: "Trending Short #1",
-    category: "Trending Shorts",
-    youtubeId: "M7ZfvcOqoYk",
-    aspect: "9:16",
-    thumbnail: "https://i.ytimg.com/vi/M7ZfvcOqoYk/hqdefault.jpg",
-  },
-  {
-    id: "tr2",
-    title: "Trending Short #2",
-    category: "Trending Shorts",
-    youtubeId: "6Y5xhhNlFa8",
-    aspect: "9:16",
-    thumbnail: "https://i.ytimg.com/vi/6Y5xhhNlFa8/hqdefault.jpg",
-  },
-  {
-    id: "tr3",
-    title: "Trending Short #3",
-    category: "Trending Shorts",
-    youtubeId: "mOKcyvnqACc",
-    aspect: "9:16",
-    thumbnail: "https://i.ytimg.com/vi/mOKcyvnqACc/hqdefault.jpg",
-  },
-  {
-    id: "tr4",
-    title: "Trending Short #4",
-    category: "Trending Shorts",
-    youtubeId: "9BbkIQ2C1vY",
-    aspect: "9:16",
-    thumbnail: "https://i.ytimg.com/vi/9BbkIQ2C1vY/hqdefault.jpg",
-  },
-  {
-    id: "tr5",
-    title: "Trending Short #5",
-    category: "Trending Shorts",
-    youtubeId: "TGUXRiG15zY",
-    aspect: "9:16",
-    thumbnail: "https://i.ytimg.com/vi/TGUXRiG15zY/hqdefault.jpg",
-  },
+// Trending Shorts (6)
+{
+  id: "tr0",
+  title: "Trending Short — Featured",
+  category: "Trending Shorts",
+  youtubeId: "ivqAOpPmovw",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/ivqAOpPmovw/hqdefault.jpg"
+},
+{
+  id: "tr1",
+  title: "Trending Short #1",
+  category: "Trending Shorts",
+  youtubeId: "M7ZfvcOqoYk",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/M7ZfvcOqoYk/hqdefault.jpg"
+},
+{
+  id: "tr2",
+  title: "Trending Short #2",
+  category: "Trending Shorts",
+  youtubeId: "6Y5xhhNlFa8",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/6Y5xhhNlFa8/hqdefault.jpg"
+},
+{
+  id: "tr3",
+  title: "Trending Short #3",
+  category: "Trending Shorts",
+  youtubeId: "mOKcyvnqACc",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/mOKcyvnqACc/hqdefault.jpg"
+},
+{
+  id: "tr4",
+  title: "Trending Short #4",
+  category: "Trending Shorts",
+  youtubeId: "9BbkIQ2C1vY",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/9BbkIQ2C1vY/hqdefault.jpg"
+},
+{
+  id: "tr5",
+  title: "Trending Short #5",
+  category: "Trending Shorts",
+  youtubeId: "TGUXRiG15zY",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/TGUXRiG15zY/hqdefault.jpg"
+},
 
-  // Montages (1)
-  {
-    id: "mo1",
-    title: "Montage — Highlight Cut",
-    category: "Montages",
-    youtubeId: "6Y5xhhNlFa8",
-    aspect: "9:16",
-    thumbnail: "https://i.ytimg.com/vi/6Y5xhhNlFa8/hqdefault.jpg",
-  },
+// Montages (1)
+{
+  id: "mo1",
+  title: "Montage — Highlight Cut",
+  category: "Montages",
+  youtubeId: "6Y5xhhNlFa8",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/6Y5xhhNlFa8/hqdefault.jpg"
+},
 
-  // AMV (2)
-  {
-    id: "amv1",
-    title: "AMV — Sync Cut 1",
-    category: "AMV",
-    youtubeId: "mOKcyvnqACc",
-    aspect: "9:16",
-    thumbnail: "https://i.ytimg.com/vi/mOKcyvnqACc/hqdefault.jpg",
-  },
-  {
-    id: "amv2",
-    title: "AMV — Sync Cut 2",
-    category: "AMV",
-    youtubeId: "TGUXRiG15zY",
-    aspect: "9:16",
-    thumbnail: "https://i.ytimg.com/vi/TGUXRiG15zY/hqdefault.jpg",
-  },
+// AMV (2)
+{
+  id: "amv1",
+  title: "AMV — Sync Cut 1",
+  category: "AMV",
+  youtubeId: "mOKcyvnqACc",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/mOKcyvnqACc/hqdefault.jpg"
+},
+{
+  id: "amv2",
+  title: "AMV — Sync Cut 2",
+  category: "AMV",
+  youtubeId: "TGUXRiG15zY",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/TGUXRiG15zY/hqdefault.jpg"
+},
 
-  // Car Edits (1)
-  {
-    id: "car1",
-    title: "Car Edit — Night Run",
-    category: "Car Edits",
-    youtubeId: "6Y5xhhNlFa8",
-    aspect: "9:16",
-    thumbnail: "https://i.ytimg.com/vi/6Y5xhhNlFa8/hqdefault.jpg",
-  },
+// Car Edits (1)
+{
+  id: "car1",
+  title: "Car Edit — Night Run",
+  category: "Car Edits",
+  youtubeId: "6Y5xhhNlFa8",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/6Y5xhhNlFa8/hqdefault.jpg"
+},
 
-  // Motion Graphics (2)
-  {
-    id: "mg1",
-    title: "Motion Graphics — Logo Reveal",
-    category: "Motion Graphics",
-    youtubeId: "9BbkIQ2C1vY",
-    aspect: "9:16",
-    thumbnail: "https://i.ytimg.com/vi/9BbkIQ2C1vY/hqdefault.jpg",
-  },
-  {
-    id: "mg2",
-    title: "Motion Graphics — Animation Showcase",
-    category: "Motion Graphics",
-    youtubeId: "xb3CqGO5n8k",
-    aspect: "16:9",
-    thumbnail: "https://i.ytimg.com/vi/xb3CqGO5n8k/hqdefault.jpg",
-  },
-];
+// Motion Graphics (2)
+{
+  id: "mg1",
+  title: "Motion Graphics — Logo Reveal",
+  category: "Motion Graphics",
+  youtubeId: "9BbkIQ2C1vY",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/9BbkIQ2C1vY/hqdefault.jpg"
+},
+{
+  id: "mg2",
+  title: "Motion Graphics — Animation Showcase",
+  category: "Motion Graphics",
+  youtubeId: "xb3CqGO5n8k",
+  aspect: "16:9",
+  thumbnail: "https://i.ytimg.com/vi/xb3CqGO5n8k/hqdefault.jpg"
+}];
+
 
 const categories: Category[] = [
-  "Trending Shorts",
-  "Montages",
-  "AMV",
-  "Car Edits",
-  "Motion Graphics",
-];
+"Trending Shorts",
+"Montages",
+"AMV",
+"Car Edits",
+"Motion Graphics"];
+
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState<Category>("Trending Shorts");
@@ -175,9 +175,9 @@ export default function HomePage() {
     // Floating blobs in hero
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ repeat: -1, yoyo: true });
-      tl.to(".blob-1", { x: 30, y: -20, scale: 1.1, duration: 6, ease: "sine.inOut" })
-        .to(".blob-2", { x: -20, y: 20, scale: 1.05, duration: 6, ease: "sine.inOut" }, 0)
-        .to(".blob-3", { x: 15, y: 25, scale: 0.95, duration: 7, ease: "sine.inOut" }, 0.3);
+      tl.to(".blob-1", { x: 30, y: -20, scale: 1.1, duration: 6, ease: "sine.inOut" }).
+      to(".blob-2", { x: -20, y: 20, scale: 1.05, duration: 6, ease: "sine.inOut" }, 0).
+      to(".blob-3", { x: 15, y: 25, scale: 0.95, duration: 7, ease: "sine.inOut" }, 0.3);
 
       // Reveal animations for sections
       const revealTargets = gsap.utils.toArray<HTMLElement>(
@@ -194,8 +194,8 @@ export default function HomePage() {
             ease: "power2.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 80%",
-            },
+              start: "top 80%"
+            }
           }
         );
       });
@@ -242,10 +242,10 @@ export default function HomePage() {
                   <SheetTitle>Navigation</SheetTitle>
                 </SheetHeader>
                 <div className="mt-6 grid gap-2">
-                  <Button variant="ghost" className="justify-start" onClick={() => { scrollToId("portfolio"); setMobileOpen(false); }}>Portfolio</Button>
-                  <Button variant="ghost" className="justify-start" onClick={() => { scrollToId("about"); setMobileOpen(false); }}>About</Button>
-                  <Button variant="ghost" className="justify-start" onClick={() => { scrollToId("contact"); setMobileOpen(false); }}>Contact</Button>
-                  <Button className="justify-start" onClick={() => { scrollToId("contact"); setMobileOpen(false); }}>Hire Me</Button>
+                  <Button variant="ghost" className="justify-start" onClick={() => {scrollToId("portfolio");setMobileOpen(false);}}>Portfolio</Button>
+                  <Button variant="ghost" className="justify-start" onClick={() => {scrollToId("about");setMobileOpen(false);}}>About</Button>
+                  <Button variant="ghost" className="justify-start" onClick={() => {scrollToId("contact");setMobileOpen(false);}}>Contact</Button>
+                  <Button className="justify-start" onClick={() => {scrollToId("contact");setMobileOpen(false);}}>Hire Me</Button>
                 </div>
               </SheetContent>
             </Sheet>
@@ -262,7 +262,7 @@ export default function HomePage() {
         </div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 reveal-up">
-            <Badge variant="secondary" className="rounded-full px-3 py-1">1 Year Experience</Badge>
+            <Badge variant="secondary" className="rounded-full px-3 py-1 !whitespace-pre-line">3 Year Experience</Badge>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Crafting engaging edits that keep viewers watching
             </h1>
@@ -282,8 +282,8 @@ export default function HomePage() {
               <img
                 src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1600&auto=format&fit=crop"
                 alt="Editing setup"
-                className="h-full w-full object-cover"
-              />
+                className="h-full w-full object-cover" />
+
               <div className="absolute inset-0 bg-gradient-to-tr from-background/60 to-transparent" />
             </div>
           </div>
@@ -315,35 +315,35 @@ export default function HomePage() {
 
         <Tabs value={activeTab} onValueChange={(v) => setActiveTab(v as Category)} className="reveal hidden md:block">
           <TabsList className="flex flex-wrap">
-            {categories.map((c) => (
-              <TabsTrigger key={c} value={c} className="capitalize">{c}</TabsTrigger>
-            ))}
+            {categories.map((c) =>
+            <TabsTrigger key={c} value={c} className="capitalize">{c}</TabsTrigger>
+            )}
           </TabsList>
-          {categories.map((c) => (
-            <TabsContent key={c} value={c} className="mt-6">
+          {categories.map((c) =>
+          <TabsContent key={c} value={c} className="mt-6">
               {/* grid */}
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {allVideos
-                  .filter((v) => v.category === c)
-                  .map((v) => (
-                    <Card
-                      key={v.id}
-                      className="group overflow-hidden hover:shadow-lg transition-shadow reveal-card"
-                    >
+                {allVideos.
+              filter((v) => v.category === c).
+              map((v) =>
+              <Card
+                key={v.id}
+                className="group overflow-hidden hover:shadow-lg transition-shadow reveal-card">
+
                       <Dialog onOpenChange={(open) => !open && setDialogVideo(null)}>
                         <DialogTrigger asChild>
                           <button
-                            className="text-left w-full"
-                            onClick={() => setDialogVideo(v)}
-                            aria-label={`Open ${v.title}`}
-                          >
+                      className="text-left w-full"
+                      onClick={() => setDialogVideo(v)}
+                      aria-label={`Open ${v.title}`}>
+
                             <div className={`relative ${v.aspect === "9:16" ? "aspect-[9/16]" : "aspect-video"} overflow-hidden`}>
                               <img
-                                src={v.thumbnail}
-                                alt={v.title}
-                                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                loading="lazy"
-                              />
+                          src={v.thumbnail}
+                          alt={v.title}
+                          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          loading="lazy" />
+
                               <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                               <div className="absolute inset-0 grid place-items-center">
                                 <Button size="sm" variant="secondary">Play</Button>
@@ -360,51 +360,51 @@ export default function HomePage() {
                             <DialogTitle>{dialogVideo?.title}</DialogTitle>
                           </DialogHeader>
                           <div className={`relative ${dialogVideo?.aspect === "9:16" ? "aspect-[9/16]" : "aspect-video"} overflow-hidden rounded-md ring-1 ring-border`}>
-                            {dialogVideo?.youtubeId ? (
-                              <iframe
-                                src={`https://www.youtube.com/embed/${dialogVideo.youtubeId}?rel=0`}
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                                className="h-full w-full"
-                                title={dialogVideo?.title || "Video preview"}
-                              />
-                            ) : dialogVideo?.driveId ? (
-                              <iframe
-                                src={`https://drive.google.com/file/d/${dialogVideo.driveId}/preview`}
-                                allow="autoplay; fullscreen"
-                                className="h-full w-full"
-                                title={dialogVideo?.title || "Video preview"}
-                              />
-                            ) : (
-                              <div className="grid h-full w-full place-items-center text-muted-foreground">
+                            {dialogVideo?.youtubeId ?
+                      <iframe
+                        src={`https://www.youtube.com/embed/${dialogVideo.youtubeId}?rel=0`}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        className="h-full w-full"
+                        title={dialogVideo?.title || "Video preview"} /> :
+
+                      dialogVideo?.driveId ?
+                      <iframe
+                        src={`https://drive.google.com/file/d/${dialogVideo.driveId}/preview`}
+                        allow="autoplay; fullscreen"
+                        className="h-full w-full"
+                        title={dialogVideo?.title || "Video preview"} /> :
+
+
+                      <div className="grid h-full w-full place-items-center text-muted-foreground">
                                 Video unavailable
                               </div>
-                            )}
+                      }
                           </div>
                         </DialogContent>
                       </Dialog>
                     </Card>
-                  ))}
+              )}
               </div>
             </TabsContent>
-          ))}
+          )}
         </Tabs>
 
         {/* When using mobile select, render grid separately */}
         <div className="md:hidden">
           <div className="grid sm:grid-cols-2 gap-6">
-            {filteredVideos.map((v) => (
-              <Card key={v.id} className="group overflow-hidden hover:shadow-lg transition-shadow reveal-card">
+            {filteredVideos.map((v) =>
+            <Card key={v.id} className="group overflow-hidden hover:shadow-lg transition-shadow reveal-card">
                 <Dialog onOpenChange={(open) => !open && setDialogVideo(null)}>
                   <DialogTrigger asChild>
                     <button className="text-left w-full" onClick={() => setDialogVideo(v)} aria-label={`Open ${v.title}`}>
                       <div className={`relative ${v.aspect === "9:16" ? "aspect-[9/16]" : "aspect-video"} overflow-hidden`}>
                         <img
-                          src={v.thumbnail}
-                          alt={v.title}
-                          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                          loading="lazy"
-                        />
+                        src={v.thumbnail}
+                        alt={v.title}
+                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy" />
+
                         <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                         <div className="absolute inset-0 grid place-items-center">
                           <Button size="sm" variant="secondary">Play</Button>
@@ -421,29 +421,29 @@ export default function HomePage() {
                       <DialogTitle>{dialogVideo?.title}</DialogTitle>
                     </DialogHeader>
                     <div className={`relative ${dialogVideo?.aspect === "9:16" ? "aspect-[9/16]" : "aspect-video"} overflow-hidden rounded-md ring-1 ring-border`}>
-                      {dialogVideo?.youtubeId ? (
-                        <iframe
-                          src={`https://www.youtube.com/embed/${dialogVideo.youtubeId}?rel=0`}
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          allowFullScreen
-                          className="h-full w-full"
-                          title={dialogVideo?.title || "Video preview"}
-                        />
-                      ) : dialogVideo?.driveId ? (
-                        <iframe
-                          src={`https://drive.google.com/file/d/${dialogVideo.driveId}/preview`}
-                          allow="autoplay; fullscreen"
-                          className="h-full w-full"
-                          title={dialogVideo?.title || "Video preview"}
-                        />
-                      ) : (
-                        <div className="grid h-full w-full place-items-center text-muted-foreground">Video unavailable</div>
-                      )}
+                      {dialogVideo?.youtubeId ?
+                    <iframe
+                      src={`https://www.youtube.com/embed/${dialogVideo.youtubeId}?rel=0`}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      className="h-full w-full"
+                      title={dialogVideo?.title || "Video preview"} /> :
+
+                    dialogVideo?.driveId ?
+                    <iframe
+                      src={`https://drive.google.com/file/d/${dialogVideo.driveId}/preview`}
+                      allow="autoplay; fullscreen"
+                      className="h-full w-full"
+                      title={dialogVideo?.title || "Video preview"} /> :
+
+
+                    <div className="grid h-full w-full place-items-center text-muted-foreground">Video unavailable</div>
+                    }
                     </div>
                   </DialogContent>
                 </Dialog>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -495,14 +495,14 @@ export default function HomePage() {
 
           {/* Testimonials placeholder */}
           <div className="mt-12 grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((i) => (
-              <Card key={i} className="reveal-card">
+            {[1, 2, 3].map((i) =>
+            <Card key={i} className="reveal-card">
                 <CardContent className="pt-6 text-sm">
                   <p className="italic">"Amazing attention to detail and quick turnaround. Will work again."</p>
                   <div className="mt-4 text-xs text-muted-foreground">— Client Name</div>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -542,8 +542,8 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>);
+
 }
 
 function ContactForm() {
@@ -576,6 +576,6 @@ function ContactForm() {
         <div className="text-xs text-muted-foreground">I usually reply within 24 hours.</div>
         <Button type="submit">Send</Button>
       </div>
-    </form>
-  );
+    </form>);
+
 }
