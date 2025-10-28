@@ -137,7 +137,7 @@ const allVideos: VideoItem[] = [
     thumbnail: "https://i.ytimg.com/vi/6Y5xhhNlFa8/hqdefault.jpg",
   },
 
-  // Motion Graphics (1)
+  // Motion Graphics (2)
   {
     id: "mg1",
     title: "Motion Graphics — Logo Reveal",
@@ -145,6 +145,14 @@ const allVideos: VideoItem[] = [
     youtubeId: "9BbkIQ2C1vY",
     aspect: "9:16",
     thumbnail: "https://i.ytimg.com/vi/9BbkIQ2C1vY/hqdefault.jpg",
+  },
+  {
+    id: "mg2",
+    title: "Motion Graphics — Animation Showcase",
+    category: "Motion Graphics",
+    youtubeId: "xb3CqGO5n8k",
+    aspect: "16:9",
+    thumbnail: "https://i.ytimg.com/vi/xb3CqGO5n8k/hqdefault.jpg",
   },
 ];
 
