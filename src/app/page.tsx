@@ -98,6 +98,22 @@ const allVideos: VideoItem[] = [
   aspect: "9:16",
   thumbnail: "https://i.ytimg.com/vi/TGUXRiG15zY/hqdefault.jpg"
 },
+{
+  id: "tr6",
+  title: "Trending Short #6",
+  category: "Trending Shorts",
+  youtubeId: "kb0mkOpE9z8",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/kb0mkOpE9z8/hqdefault.jpg"
+},
+{
+  id: "tr7",
+  title: "Trending Short #7",
+  category: "Trending Shorts",
+  youtubeId: "tbyIqlTzk84",
+  aspect: "9:16",
+  thumbnail: "https://i.ytimg.com/vi/tbyIqlTzk84/hqdefault.jpg"
+},
 
 // Montages (1)
 {
